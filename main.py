@@ -4,25 +4,34 @@ def q1():
     verifique se ele é par ou ímpar. Imprima uma mensagem informando o 
     resultado.
     """
-    pass
+    numero = int(input("Digite um número: "))
+    if (numero % 2 == 0):
+        print("Par")
+    else:
+        print("Impar")
 
 
 def q2():
     """
     Dada a string use o operador de fatiamento para imprimir somente a metade final
-    Para 'abcdef, imprima: 'def'
+    Para 'abcdef, imprima: 'def' 
+          012345
     Para 'texto', imprima 'to'
-
+          01234
+    Para 'tempestade' imprima 'stade'
+          1234567890
     """
-    pass
+    import math
+    texto = input("Digite o texto: ")
+    tamanho = len(texto) #6
+    meio = math.ceil(tamanho / 2)  #3
+    print(texto[meio:tamanho])
 
 def q3():
     """
     Leia um número da entrada e imprima todos os 10 primeiros múltiplos dele na mesma linha
     """
     pass
-
-
 def q4():
     """
     Escreva um programa que solicite ao usuário para digitar seu nome em letras
@@ -33,7 +42,6 @@ def q4():
      - ze da manga - Ze da Manga
     """
     pass
-
 def q5():
     """
     Verificação de Triângulo: Peça ao usuário o comprimento de três lados em uma única entrada
@@ -60,3 +68,6 @@ def q9():
 
 def q10():
     pass
+
+if __name__ == "__main__":
+    q2()
